@@ -1,0 +1,20 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+.downloads li {
+    width: calc(50% - 1px);
+}
+/* This makes the second li 1px wider (optically), but what can we do? */
+.downloads li:last-child {
+    border-right: 0;
+}
+a:hover {
+    /* Changing font-weight for non-monospace fonts is a bad idea. */
+    font-weight: normal;
+    text-shadow: 0 0 5px #bdf;
+}
+.logo {
+    width: 100%;
+}
