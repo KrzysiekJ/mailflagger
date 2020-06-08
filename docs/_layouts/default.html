@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="" class="logo" />
+        {% endif %}
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        {% if site.github.is_user_page %}
+          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
+
+        {% if site.show_downloads %}
+          <ul class="downloads">
+            <li><a href="{{ site.github.repository_url }}/releases">Download <strong>releases</strong></a></li>
+            <li><a href="{{ site.github.repository_url }}">View <strong>source code</strong></a></li>
+          </ul>
+        {% endif %}
+      </header>
+      <section>
+
+        {{ content }}
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://jurewicz.org.pl">Krzysztof Jurewicz</a>.</p>
+        <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a> (modified)</small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

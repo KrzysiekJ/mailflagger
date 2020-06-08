@@ -1,0 +1,3 @@
+# Freezing wxPython version because of https://github.com/chriskiehl/Gooey/pull/555/ and https://github.com/chriskiehl/Gooey/issues/549 .
+wxpython==4.0.7.post2
+Gooey==1.0.3
